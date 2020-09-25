@@ -1,0 +1,118 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: black;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+}
+
+header h1 {
+    margin-top: -190px;
+}
+
+header, header:before {
+    background: 50% 50% / cover;
+}
+
+header::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    display: block;
+    background-image: url("images/bloom.jpg");
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+/* Uncomment lines 47 and 48 then refresh the page to see if you want the scrolling effect on the header or not */
+
+header * {
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+}
+
+.container {
+    z-index: 2;
+    position: absolute;
+    top: 100vh;
+    background: black;
+    line-height: 30px;
+    font-weight: lighter;
+    padding: 40px;
+    color: gray;
+}
+
+h2 {
+    text-align: center;
+    font-weight: lighter;
+    background: black;
+    color:rgb(206, 199, 199);
+    padding: 40px;
+    /* position: absolute; */
+}
+
+/* .container {
+    text-align: center;
+    color: white;
+} */
+
+nav {
+    width: 100%;
+    height: 150px;
+    background: black;
+    line-height: 80px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: gray;
+    padding: 30px
+}
+
+nav ul li a:hover {
+    color: rgb(223, 166, 210);
+}
+
+a {
+    color: rgb(223, 166, 210);
+}
+
